@@ -1,0 +1,121 @@
+#MAIN_taboola {
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  display: "-moz-grid";
+  display: "-ms-grid";
+  justify-items: center;
+}
+
+/* Main container */
+.taboola-container {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  display: grid;
+  display: "-moz-grid";
+  display: "-ms-grid";
+  grid-template-columns: repeat(3, auto);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+/* Headers */
+#HEADERS_taboola {
+  display: grid;
+  display: "-moz-grid";
+  display: "-ms-grid";
+  grid-template-columns: 10fr 2fr;
+  grid-column-gap: 100px;
+  margin-bottom: 6px;
+}
+
+/* Disclosure */
+#DISCLOSURE_taboola {
+  font-size: 0.7rem;
+  color: lightslategray;
+  text-decoration: solid;
+  margin-top: 5px;
+}
+
+/* Item WRAPPER */
+.WRAPPER_taboola {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background-color: lightgray;
+  max-width: 313px;
+  border-radius: 13px;
+}
+.WRAPPER_taboola:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+  transition: 0.2s ease-in-out;
+}
+
+/* Info Wrapper  */
+.INFO-WRAPPER_taboola {
+  background-color: lightgray;
+  border-radius: 13px;
+  padding: 7px;
+}
+/* Title */
+.TITLE_taboola {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 0;
+  /*  */
+  display: -webkit-box;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+/* Category */
+.CATEGORY_taboola {
+  font-weight: bold;
+  color: tomato;
+  font-size: 0.9rem;
+}
+
+/* Branding */
+.taboola-branding {
+  color: gray;
+  text-decoration: none;
+  margin-bottom: 0;
+  font-size: 0.8rem;
+}
+
+/* Branding Link */
+.taboola-BLink {
+  text-decoration: none;
+}
+
+/* Image */
+.IMAGE_taboola {
+  width: 100%;
+  height: auto;
+  border-radius: 13px;
+}
+
+/* Smartphone */
+@media (max-width: 600px) {
+  #DISCLOSURE_taboola {
+    display: none;
+  }
+
+  #HEADERS_taboola {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .taboola-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 85%vw;
+    margin-bottom: none;
+  }
+}
